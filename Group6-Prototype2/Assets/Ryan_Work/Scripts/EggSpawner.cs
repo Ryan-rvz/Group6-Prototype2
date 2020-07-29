@@ -23,6 +23,7 @@ public class EggSpawner : MonoBehaviour
     private void Start()
     {
         spawnStarter.canSpawn = true;
+        patternToSpawn = 0;
     }
 
     private void Update()
@@ -33,6 +34,8 @@ public class EggSpawner : MonoBehaviour
       if (spawnStarter.canSpawn)
         {
             patternToSpawn = Random.Range(0, 5);
+
+         
 
             if (patternToSpawn == 0)
             {
@@ -54,15 +57,15 @@ public class EggSpawner : MonoBehaviour
                 ZigZag2();
             }
 
-            if (patternToSpawn == 4 && Time.time >= timeChanger)
-            {
-                timeChanger = Time.time + timeBetweenChanger;
-                Changer();
-            }
-            else
-            {
-                patternToSpawn = Random.Range(0, 5);
-            }
+           if (patternToSpawn == 4 && Time.time >= timeChanger)
+           {
+               timeChanger = Time.time + timeBetweenChanger;
+               ChangerStraight();
+           }
+           else
+           {
+              patternToSpawn = Random.Range(0, 5);
+           }
 
         }
 
@@ -124,11 +127,29 @@ public class EggSpawner : MonoBehaviour
         Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[4].transform.position.x, spawnPoint[4].transform.position.y), Quaternion.identity);
     }
 
-    public void Changer()
+    public void ChangerStraight()
     {
+        int currentSpawn = 0;
         spawnStarter.canSpawn = false;
-        Instantiate(changer, spawnPoint[3].transform.position, Quaternion.identity);
+
+        if( currentSpawn <= 4)
+        {
+            for (int i = 0; i <= 3; i++)
+            {
+                if (currentSpawn == 3)
+                {
+                    currentSpawn++;
+                   
+                }
+                Instantiate(Eggs[Random.Range(0, Eggs.Length)], spawnPoint[currentSpawn].transform.position, Quaternion.identity);
+                currentSpawn++;
+              
+            }
+
+            Instantiate(changer, spawnPoint[3].transform.position, Quaternion.identity);
+        }  
     }
+
     private void RandomNumberAssignment()
     {
        

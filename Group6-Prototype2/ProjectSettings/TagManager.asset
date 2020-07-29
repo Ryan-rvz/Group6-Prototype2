@@ -9,6 +9,9 @@ TagManager:
   - Blue
   - Yellow
   - Changer
+  - ChangerSwitch
+  - Egg
+  - Black
   layers:
   - Default
   - TransparentFX

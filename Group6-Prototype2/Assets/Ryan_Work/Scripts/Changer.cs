@@ -5,29 +5,26 @@ using UnityEngine;
 public class Changer : MonoBehaviour
 {
     private Player playerScript;
-    private SpawnStarter spawnStaterScript;
-    
+    private SpawnStarter spawnStarterScript;
 
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         playerScript = GameObject.Find("PlayerHolder").GetComponent<Player>();
-        spawnStaterScript = GameObject.Find("SpawnStarter").GetComponent<SpawnStarter>();
+        spawnStarterScript = GameObject.Find("SpawnStarter").GetComponent<SpawnStarter>();
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-
         if (collision.gameObject.name == "PlayerHolder")
         {
             playerScript.ColorSwitch();
-            spawnStaterScript.canSpawn = true;
-      
+            spawnStarterScript.canSpawn = true;
+            Destroy(gameObject);
+        }
+        else if (collision.tag == "ChangerSwitch")
+        {
+            spawnStarterScript.canSpawn = true;
         }
     }
-
-    private void Update()
-    {
-     
-    }
-
 }

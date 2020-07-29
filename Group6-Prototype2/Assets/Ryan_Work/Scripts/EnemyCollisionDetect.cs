@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EggScript : MonoBehaviour
+public class EnemyCollisionDetect : MonoBehaviour
 {
-    public float moveSpeed;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +13,6 @@ public class EggScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+        
     }
 }

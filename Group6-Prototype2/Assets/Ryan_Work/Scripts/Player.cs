@@ -19,9 +19,14 @@ public class Player : MonoBehaviour
     public float maxHeight;
     public float minHeight;
 
+
+
+    private UniversalVarHolder universeScript;
+
     private void Start()
     {
         canMove = true;
+        universeScript = GameObject.Find("UniversalManager").GetComponent<UniversalVarHolder>();
             
     }
 
@@ -93,7 +98,27 @@ public class Player : MonoBehaviour
       
     }
 
- 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == this.tag)
+        {        
+            Destroy(collision.gameObject);
+            universeScript.AddToScore();
+        }
+        else  if (collision.tag == "Changer")
+        {
+            universeScript.AddToScore();
+        }
+
+        else if (collision.tag != this.tag)
+        {
+
+            universeScript.PlayerDeath();
+        }
+    }
+
+
     public void ColorSwitch()
     {
         int randomColor = Random.Range(0, 4);
