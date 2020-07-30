@@ -13,6 +13,7 @@ TagManager:
   - Egg
   - Black
   - End
+  - SoundManager
   layers:
   - Default
   - TransparentFX

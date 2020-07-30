@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UniversalVarHolder : MonoBehaviour
 {
@@ -25,7 +27,9 @@ public class UniversalVarHolder : MonoBehaviour
     [HideInInspector]
     public static bool playerDead;
 
-    
+    private SoundManager soundScript;
+
+    public Text scoreText;
 
     private void Awake()
     {
@@ -35,6 +39,7 @@ public class UniversalVarHolder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        soundScript = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         screenShake = GameObject.Find("MainCamera").GetComponent<CameraShake>();
         playerHolder = GameObject.Find("PlayerHolder");
         minSpeed = currentSpeed;
@@ -44,6 +49,8 @@ public class UniversalVarHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        scoreText.text = "Score: " + score;
+
         currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, time / accelerationTime);
         time += Time.deltaTime;
         currentTime = Time.timeScale;
@@ -64,7 +71,7 @@ public class UniversalVarHolder : MonoBehaviour
 
     public void PlayerDeath()
     {
-
+        soundScript.DeathSound();
         playerDead = true;    
         screenShake.WrongEggShake();
         Destroy(playerHolder);
