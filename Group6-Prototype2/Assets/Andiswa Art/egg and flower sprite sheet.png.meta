@@ -1,0 +1,1142 @@
+fileFormatVersion: 2
+guid: 2142079d85ad5774482ee2564ef8086b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7797107435046141367
+    second: Egg1
+  - first:
+      213: 7499401887842216513
+    second: Egg2
+  - first:
+      213: -6067366921625160478
+    second: Flower1
+  - first:
+      213: 5993499554749722148
+    second: Flower2
+  - first:
+      213: 1548551236117404499
+    second: egg and flower sprite sheet_4
+  - first:
+      213: -853321291612691094
+    second: egg and flower sprite sheet_5
+  - first:
+      213: -3698865819967466558
+    second: egg and flower sprite sheet_6
+  - first:
+      213: 5002554151748170974
+    second: egg and flower sprite sheet_7
+  - first:
+      213: -2407823922918760850
+    second: egg and flower sprite sheet_8
+  - first:
+      213: 5183970174215681094
+    second: egg and flower sprite sheet_9
+  - first:
+      213: 8550986028809556390
+    second: egg and flower sprite sheet_10
+  - first:
+      213: 5183795067712469417
+    second: egg and flower sprite sheet_11
+  - first:
+      213: 5593184987116357679
+    second: egg and flower sprite sheet_12
+  - first:
+      213: 5358773498151485190
+    second: egg and flower sprite sheet_13
+  - first:
+      213: -3524413562032347829
+    second: egg and flower sprite sheet_14
+  - first:
+      213: 7713271434730116642
+    second: egg and flower sprite sheet_15
+  - first:
+      213: 1466961290180684867
+    second: egg and flower sprite sheet_16
+  - first:
+      213: -2825850455979381325
+    second: egg and flower sprite sheet_17
+  - first:
+      213: 6311658098044832442
+    second: egg and flower sprite sheet_18
+  - first:
+      213: 6250706345235911174
+    second: egg and flower sprite sheet_19
+  - first:
+      213: -2895641831308752673
+    second: egg and flower sprite sheet_20
+  - first:
+      213: -2844482451252722838
+    second: egg and flower sprite sheet_21
+  - first:
+      213: -9145872454667295332
+    second: egg and flower sprite sheet_22
+  - first:
+      213: 8457425339523849303
+    second: egg and flower sprite sheet_23
+  - first:
+      213: -5114876846451805862
+    second: egg and flower sprite sheet_24
+  - first:
+      213: -2054008647555826178
+    second: egg and flower sprite sheet_25
+  - first:
+      213: 7137996696624323140
+    second: egg and flower sprite sheet_26
+  - first:
+      213: 8716622227504437618
+    second: egg and flower sprite sheet_27
+  - first:
+      213: -3389174834271220201
+    second: egg and flower sprite sheet_28
+  - first:
+      213: 4278897403821766335
+    second: egg and flower sprite sheet_29
+  - first:
+      213: 5064371676398031479
+    second: egg and flower sprite sheet_30
+  - first:
+      213: -4341997310710081433
+    second: egg and flower sprite sheet_31
+  - first:
+      213: -5773902098798506012
+    second: egg and flower sprite sheet_32
+  - first:
+      213: 5277977193833600065
+    second: egg and flower sprite sheet_33
+  - first:
+      213: 5236895661965357846
+    second: egg and flower sprite sheet_34
+  - first:
+      213: 6257892811995389400
+    second: egg and flower sprite sheet_35
+  - first:
+      213: -6382210996350922260
+    second: egg and flower sprite sheet_36
+  - first:
+      213: 3618529552646942790
+    second: egg and flower sprite sheet_37
+  - first:
+      213: 3619757233268739380
+    second: egg and flower sprite sheet_38
+  - first:
+      213: -3828400666291938318
+    second: egg and flower sprite sheet_39
+  - first:
+      213: 320935165050325922
+    second: egg and flower sprite sheet_40
+  - first:
+      213: -1385506543762402580
+    second: egg and flower sprite sheet_41
+  - first:
+      213: -5130383351563246183
+    second: egg and flower sprite sheet_42
+  - first:
+      213: 918528086744385290
+    second: egg and flower sprite sheet_43
+  - first:
+      213: -6410000806529320003
+    second: egg and flower sprite sheet_44
+  - first:
+      213: -965133931655280212
+    second: egg and flower sprite sheet_45
+  - first:
+      213: 5675411522936150166
+    second: egg and flower sprite sheet_46
+  - first:
+      213: 3182139258211159224
+    second: egg and flower sprite sheet_47
+  - first:
+      213: -4278596586316024311
+    second: egg and flower sprite sheet_48
+  - first:
+      213: 5431371397502090158
+    second: egg and flower sprite sheet_49
+  - first:
+      213: 129488067128199335
+    second: egg and flower sprite sheet_50
+  - first:
+      213: -8996658675217014106
+    second: egg and flower sprite sheet_51
+  - first:
+      213: 688117471042871403
+    second: egg and flower sprite sheet_52
+  - first:
+      213: 7755493634748020399
+    second: egg and flower sprite sheet_53
+  - first:
+      213: 8941957785401369725
+    second: egg and flower sprite sheet_54
+  - first:
+      213: -4326616088556433844
+    second: egg and flower sprite sheet_55
+  - first:
+      213: -2218494474448393372
+    second: egg and flower sprite sheet_56
+  - first:
+      213: -4134234110303486474
+    second: egg and flower sprite sheet_57
+  - first:
+      213: -7496545186973670712
+    second: egg and flower sprite sheet_58
+  - first:
+      213: -3536215981764399458
+    second: egg and flower sprite sheet_59
+  - first:
+      213: 8155530645536625267
+    second: egg and flower sprite sheet_60
+  - first:
+      213: 3170005898002679861
+    second: egg and flower sprite sheet_61
+  - first:
+      213: 4991862566053920044
+    second: egg and flower sprite sheet_62
+  - first:
+      213: 3367667090232736761
+    second: egg and flower sprite sheet_63
+  - first:
+      213: -8370010617090660956
+    second: egg and flower sprite sheet_64
+  - first:
+      213: 5570274856054537539
+    second: egg and flower sprite sheet_65
+  - first:
+      213: -8492626076610850133
+    second: egg and flower sprite sheet_66
+  - first:
+      213: -4939287295691524775
+    second: egg and flower sprite sheet_67
+  - first:
+      213: -427445018912871667
+    second: egg and flower sprite sheet_68
+  - first:
+      213: 438805787488148737
+    second: egg and flower sprite sheet_69
+  - first:
+      213: 5561297476907273078
+    second: egg and flower sprite sheet_70
+  - first:
+      213: -8946828094543333688
+    second: egg and flower sprite sheet_71
+  - first:
+      213: 3154167521295346131
+    second: egg and flower sprite sheet_72
+  - first:
+      213: 5291037518016920546
+    second: egg and flower sprite sheet_73
+  - first:
+      213: -8574464214233503323
+    second: egg and flower sprite sheet_74
+  - first:
+      213: 4337894791460277403
+    second: egg and flower sprite sheet_75
+  - first:
+      213: -5211017129609482892
+    second: egg and flower sprite sheet_76
+  - first:
+      213: -1309677525571149020
+    second: egg and flower sprite sheet_77
+  - first:
+      213: 7614382390785796670
+    second: egg and flower sprite sheet_78
+  - first:
+      213: -3100093773695025845
+    second: egg and flower sprite sheet_79
+  - first:
+      213: 3203966247119042345
+    second: egg and flower sprite sheet_80
+  - first:
+      213: -1227113702461693786
+    second: egg and flower sprite sheet_81
+  - first:
+      213: 7777139779032437101
+    second: egg and flower sprite sheet_82
+  - first:
+      213: 9113495829551277226
+    second: egg and flower sprite sheet_83
+  - first:
+      213: 5070921146751124774
+    second: egg and flower sprite sheet_84
+  - first:
+      213: -8614413024630128358
+    second: egg and flower sprite sheet_85
+  - first:
+      213: -57564983864193894
+    second: egg and flower sprite sheet_86
+  - first:
+      213: 4988459527393653583
+    second: egg and flower sprite sheet_87
+  - first:
+      213: 7744733752265108314
+    second: egg and flower sprite sheet_88
+  - first:
+      213: 2928096196810901820
+    second: egg and flower sprite sheet_89
+  - first:
+      213: -8823470146018631820
+    second: egg and flower sprite sheet_90
+  - first:
+      213: -8193296809171730882
+    second: egg and flower sprite sheet_91
+  - first:
+      213: -3161226011505071020
+    second: egg and flower sprite sheet_92
+  - first:
+      213: -2565811657487104976
+    second: egg and flower sprite sheet_93
+  - first:
+      213: -8300076066629888640
+    second: egg and flower sprite sheet_94
+  - first:
+      213: 7829520245826840042
+    second: egg and flower sprite sheet_95
+  - first:
+      213: -3039703806545913184
+    second: egg and flower sprite sheet_96
+  - first:
+      213: 4595691234902736072
+    second: egg and flower sprite sheet_97
+  - first:
+      213: -4249445252243242271
+    second: egg and flower sprite sheet_98
+  - first:
+      213: 2547501226725905387
+    second: egg and flower sprite sheet_99
+  - first:
+      213: -3226118893513264475
+    second: egg and flower sprite sheet_100
+  - first:
+      213: 3300738048012327778
+    second: egg and flower sprite sheet_101
+  - first:
+      213: 3057720001547873710
+    second: egg and flower sprite sheet_102
+  - first:
+      213: 7788886676818296292
+    second: egg and flower sprite sheet_103
+  - first:
+      213: -702181539470488443
+    second: egg and flower sprite sheet_104
+  - first:
+      213: 6672402189380230519
+    second: egg and flower sprite sheet_105
+  - first:
+      213: -1343833369953039230
+    second: egg and flower sprite sheet_106
+  - first:
+      213: -699177540170013965
+    second: egg and flower sprite sheet_107
+  - first:
+      213: -1465416929392903662
+    second: egg and flower sprite sheet_108
+  - first:
+      213: 6283063545494313283
+    second: egg and flower sprite sheet_109
+  - first:
+      213: 9148239865488872529
+    second: egg and flower sprite sheet_110
+  - first:
+      213: 472957025016615864
+    second: egg and flower sprite sheet_111
+  - first:
+      213: -7720449512851167757
+    second: egg and flower sprite sheet_112
+  - first:
+      213: -1887948922371853014
+    second: egg and flower sprite sheet_113
+  - first:
+      213: -3760299235606526889
+    second: egg and flower sprite sheet_114
+  - first:
+      213: -6418423826645337972
+    second: egg and flower sprite sheet_115
+  - first:
+      213: -2145025123971901913
+    second: egg and flower sprite sheet_116
+  - first:
+      213: 2114219757552970751
+    second: egg and flower sprite sheet_117
+  - first:
+      213: 8373536922158305373
+    second: egg and flower sprite sheet_118
+  - first:
+      213: 9174097643873688648
+    second: egg and flower sprite sheet_119
+  - first:
+      213: 4371203616306027016
+    second: egg and flower sprite sheet_120
+  - first:
+      213: -8021608958203980541
+    second: egg and flower sprite sheet_121
+  - first:
+      213: 2284065069583125020
+    second: egg and flower sprite sheet_122
+  - first:
+      213: -323856700198917692
+    second: egg and flower sprite sheet_123
+  - first:
+      213: -7930057301029638422
+    second: egg and flower sprite sheet_124
+  - first:
+      213: -4996040729485308461
+    second: egg and flower sprite sheet_125
+  - first:
+      213: -2865536892601041100
+    second: egg and flower sprite sheet_126
+  - first:
+      213: 1045204890058494240
+    second: egg and flower sprite sheet_127
+  - first:
+      213: 140507812172895789
+    second: egg and flower sprite sheet_128
+  - first:
+      213: -8439963130485955100
+    second: egg and flower sprite sheet_129
+  - first:
+      213: -6924807393317915579
+    second: egg and flower sprite sheet_130
+  - first:
+      213: 7238876596951359192
+    second: egg and flower sprite sheet_131
+  - first:
+      213: 2985032980830384952
+    second: egg and flower sprite sheet_132
+  - first:
+      213: 4750512603668618768
+    second: egg and flower sprite sheet_133
+  - first:
+      213: 1660325375581179699
+    second: egg and flower sprite sheet_134
+  - first:
+      213: 7633311422962503665
+    second: egg and flower sprite sheet_135
+  - first:
+      213: -3319545274216937084
+    second: egg and flower sprite sheet_136
+  - first:
+      213: -3588531181889400064
+    second: egg and flower sprite sheet_137
+  - first:
+      213: 5879622279407276777
+    second: egg and flower sprite sheet_138
+  - first:
+      213: -6078925041175694770
+    second: egg and flower sprite sheet_139
+  - first:
+      213: -9036484783534549149
+    second: egg and flower sprite sheet_140
+  - first:
+      213: -5112958022210351512
+    second: egg and flower sprite sheet_141
+  - first:
+      213: 1885241881745744551
+    second: egg and flower sprite sheet_142
+  - first:
+      213: 442311272698677657
+    second: egg and flower sprite sheet_143
+  - first:
+      213: 5168822326485977927
+    second: egg and flower sprite sheet_144
+  - first:
+      213: 1478714849807981235
+    second: egg and flower sprite sheet_145
+  - first:
+      213: 4309023080137728241
+    second: egg and flower sprite sheet_146
+  - first:
+      213: 5540125323101932076
+    second: egg and flower sprite sheet_147
+  - first:
+      213: 3465711707274878056
+    second: egg and flower sprite sheet_148
+  - first:
+      213: 4034674556081735824
+    second: egg and flower sprite sheet_149
+  - first:
+      213: 7052538048007429858
+    second: egg and flower sprite sheet_150
+  - first:
+      213: -5328464026390450242
+    second: egg and flower sprite sheet_151
+  - first:
+      213: -4269534214443392614
+    second: egg and flower sprite sheet_152
+  - first:
+      213: 2582577495814087710
+    second: egg and flower sprite sheet_153
+  - first:
+      213: -5296059218260870176
+    second: egg and flower sprite sheet_154
+  - first:
+      213: 6316323064495101299
+    second: egg and flower sprite sheet_155
+  - first:
+      213: 593310078746698844
+    second: egg and flower sprite sheet_156
+  - first:
+      213: -6752608721924107351
+    second: egg and flower sprite sheet_157
+  - first:
+      213: 5687612244698482043
+    second: egg and flower sprite sheet_158
+  - first:
+      213: 7821108079935272117
+    second: egg and flower sprite sheet_159
+  - first:
+      213: -4617345897227073098
+    second: egg and flower sprite sheet_160
+  - first:
+      213: -1272080949820373246
+    second: egg and flower sprite sheet_161
+  - first:
+      213: 8493426207326240904
+    second: egg and flower sprite sheet_162
+  - first:
+      213: -4206912859949687962
+    second: egg and flower sprite sheet_163
+  - first:
+      213: 3576365481481261653
+    second: egg and flower sprite sheet_164
+  - first:
+      213: -4241660875100987538
+    second: egg and flower sprite sheet_165
+  - first:
+      213: 1804663138991680968
+    second: egg and flower sprite sheet_166
+  - first:
+      213: 6598310829482883048
+    second: egg and flower sprite sheet_167
+  - first:
+      213: 2818994243901131046
+    second: egg and flower sprite sheet_168
+  - first:
+      213: 6837496102489917506
+    second: egg and flower sprite sheet_169
+  - first:
+      213: 2547068481425898901
+    second: egg and flower sprite sheet_170
+  - first:
+      213: 2784414624803816357
+    second: egg and flower sprite sheet_171
+  - first:
+      213: -2172534293641234066
+    second: egg and flower sprite sheet_172
+  - first:
+      213: 6993902090601895742
+    second: egg and flower sprite sheet_173
+  - first:
+      213: -3485805160199794408
+    second: egg and flower sprite sheet_174
+  - first:
+      213: -6382509638083514047
+    second: egg and flower sprite sheet_175
+  - first:
+      213: 2848499850932069094
+    second: egg and flower sprite sheet_176
+  - first:
+      213: 676822541107657253
+    second: egg and flower sprite sheet_177
+  - first:
+      213: -5205392804735345193
+    second: egg and flower sprite sheet_178
+  - first:
+      213: -1137095803352386820
+    second: egg and flower sprite sheet_179
+  - first:
+      213: 4757102080172263981
+    second: egg and flower sprite sheet_180
+  - first:
+      213: 1352478176661698574
+    second: egg and flower sprite sheet_181
+  - first:
+      213: 7896413143745082937
+    second: egg and flower sprite sheet_182
+  - first:
+      213: 6969444615312690749
+    second: egg and flower sprite sheet_183
+  - first:
+      213: 4407914013325637165
+    second: egg and flower sprite sheet_184
+  - first:
+      213: -8746173773670333119
+    second: egg and flower sprite sheet_185
+  - first:
+      213: 7417613430407046173
+    second: egg and flower sprite sheet_186
+  - first:
+      213: -4965305055660254474
+    second: egg and flower sprite sheet_187
+  - first:
+      213: -6680740046746033374
+    second: egg and flower sprite sheet_188
+  - first:
+      213: 4285148095863058989
+    second: egg and flower sprite sheet_189
+  - first:
+      213: -3591172919867879870
+    second: egg and flower sprite sheet_190
+  - first:
+      213: 3561503736785550690
+    second: egg and flower sprite sheet_191
+  - first:
+      213: -7477089700072758734
+    second: egg and flower sprite sheet_192
+  - first:
+      213: 1939370763287877086
+    second: egg and flower sprite sheet_193
+  - first:
+      213: 7599407038470845511
+    second: egg and flower sprite sheet_194
+  - first:
+      213: -2736048297230299277
+    second: egg and flower sprite sheet_195
+  - first:
+      213: 917845244947402542
+    second: egg and flower sprite sheet_196
+  - first:
+      213: 3414298081531059233
+    second: egg and flower sprite sheet_197
+  - first:
+      213: 6757514502399428988
+    second: egg and flower sprite sheet_198
+  - first:
+      213: 1873214040519515415
+    second: egg and flower sprite sheet_199
+  - first:
+      213: -8319570160114028047
+    second: egg and flower sprite sheet_200
+  - first:
+      213: 3429609763727560899
+    second: egg and flower sprite sheet_201
+  - first:
+      213: -5612894587899116048
+    second: egg and flower sprite sheet_202
+  - first:
+      213: 7035029400934801427
+    second: egg and flower sprite sheet_203
+  - first:
+      213: -1927502481008141475
+    second: egg and flower sprite sheet_204
+  - first:
+      213: 3205681902963618595
+    second: egg and flower sprite sheet_205
+  - first:
+      213: -8268725473336362826
+    second: egg and flower sprite sheet_206
+  - first:
+      213: -5391211140131541647
+    second: egg and flower sprite sheet_207
+  - first:
+      213: -6722265354814693822
+    second: egg and flower sprite sheet_208
+  - first:
+      213: 7903692659252773825
+    second: egg and flower sprite sheet_209
+  - first:
+      213: -3104516069256747264
+    second: egg and flower sprite sheet_210
+  - first:
+      213: -8593668906250304264
+    second: egg and flower sprite sheet_211
+  - first:
+      213: -3168940900146289841
+    second: egg and flower sprite sheet_212
+  - first:
+      213: 7369662439019886644
+    second: egg and flower sprite sheet_213
+  - first:
+      213: 2683575670346445719
+    second: egg and flower sprite sheet_214
+  - first:
+      213: 4809045588265044145
+    second: egg and flower sprite sheet_215
+  - first:
+      213: 549284862347286032
+    second: egg and flower sprite sheet_216
+  - first:
+      213: 9091556390640316575
+    second: egg and flower sprite sheet_217
+  - first:
+      213: -558746381752407680
+    second: egg and flower sprite sheet_218
+  - first:
+      213: -6182741295049755277
+    second: egg and flower sprite sheet_219
+  - first:
+      213: -8137409170956096682
+    second: egg and flower sprite sheet_220
+  - first:
+      213: 2303473484823584355
+    second: egg and flower sprite sheet_221
+  - first:
+      213: -671117593320990370
+    second: egg and flower sprite sheet_222
+  - first:
+      213: -1817667361189127256
+    second: egg and flower sprite sheet_223
+  - first:
+      213: -8830838743470481607
+    second: egg and flower sprite sheet_224
+  - first:
+      213: 4894250426234222187
+    second: egg and flower sprite sheet_225
+  - first:
+      213: -1185117276903557564
+    second: egg and flower sprite sheet_226
+  - first:
+      213: 4081352380238674852
+    second: egg and flower sprite sheet_227
+  - first:
+      213: -350311459541469134
+    second: egg and flower sprite sheet_228
+  - first:
+      213: -3069534423419973825
+    second: egg and flower sprite sheet_229
+  - first:
+      213: 3699055240611565246
+    second: egg and flower sprite sheet_230
+  - first:
+      213: 3031457536881166137
+    second: egg and flower sprite sheet_231
+  - first:
+      213: 4841807400236775963
+    second: egg and flower sprite sheet_232
+  - first:
+      213: -3913513192873268862
+    second: egg and flower sprite sheet_233
+  - first:
+      213: -39195471981914977
+    second: egg and flower sprite sheet_234
+  - first:
+      213: 1736575211421708795
+    second: egg and flower sprite sheet_235
+  - first:
+      213: 6204869279383349653
+    second: egg and flower sprite sheet_236
+  - first:
+      213: 3845393159784764892
+    second: egg and flower sprite sheet_237
+  - first:
+      213: 948203282506391724
+    second: egg and flower sprite sheet_238
+  - first:
+      213: -329098284137053295
+    second: egg and flower sprite sheet_239
+  - first:
+      213: -58601773906002716
+    second: egg and flower sprite sheet_240
+  - first:
+      213: -1643059658717063267
+    second: egg and flower sprite sheet_241
+  - first:
+      213: 1492112404634877525
+    second: egg and flower sprite sheet_242
+  - first:
+      213: 9100418699380911543
+    second: egg and flower sprite sheet_243
+  - first:
+      213: -4212854646711888840
+    second: egg and flower sprite sheet_244
+  - first:
+      213: 1500356925257523668
+    second: egg and flower sprite sheet_245
+  - first:
+      213: 4402699754569855818
+    second: egg and flower sprite sheet_246
+  - first:
+      213: 4409502026527994694
+    second: egg and flower sprite sheet_247
+  - first:
+      213: 650844996770179163
+    second: egg and flower sprite sheet_248
+  - first:
+      213: -6410525150258787927
+    second: egg and flower sprite sheet_249
+  - first:
+      213: -2381698718284816854
+    second: egg and flower sprite sheet_250
+  - first:
+      213: -9068547095561839475
+    second: egg and flower sprite sheet_251
+  - first:
+      213: -3571866939971644513
+    second: egg and flower sprite sheet_252
+  - first:
+      213: -2340090384225903432
+    second: egg and flower sprite sheet_253
+  - first:
+      213: -292684024484632460
+    second: egg and flower sprite sheet_254
+  - first:
+      213: -6187725205016966328
+    second: egg and flower sprite sheet_255
+  - first:
+      213: 2166418928617465180
+    second: egg and flower sprite sheet_256
+  - first:
+      213: -6505932600179730621
+    second: egg and flower sprite sheet_257
+  - first:
+      213: -139829879152207880
+    second: egg and flower sprite sheet_258
+  - first:
+      213: -2568413595847380765
+    second: egg and flower sprite sheet_259
+  - first:
+      213: 4745822208946078825
+    second: egg and flower sprite sheet_260
+  - first:
+      213: -7031864427561685015
+    second: egg and flower sprite sheet_261
+  - first:
+      213: -1804123893763255292
+    second: egg and flower sprite sheet_262
+  - first:
+      213: -3063735601491447372
+    second: egg and flower sprite sheet_263
+  - first:
+      213: 178170865401070670
+    second: egg and flower sprite sheet_264
+  - first:
+      213: -3453914594584328037
+    second: egg and flower sprite sheet_265
+  - first:
+      213: -5677491403301670003
+    second: egg and flower sprite sheet_266
+  - first:
+      213: 1523146978247033955
+    second: egg and flower sprite sheet_267
+  - first:
+      213: -5963796622523174232
+    second: egg and flower sprite sheet_268
+  - first:
+      213: -7665674767535162175
+    second: egg and flower sprite sheet_269
+  - first:
+      213: 1550963147447438765
+    second: egg and flower sprite sheet_270
+  - first:
+      213: -8103550362829657035
+    second: egg and flower sprite sheet_271
+  - first:
+      213: -4845282728217624808
+    second: egg and flower sprite sheet_272
+  - first:
+      213: -298204615812911572
+    second: egg and flower sprite sheet_273
+  - first:
+      213: 6029782514318388668
+    second: egg and flower sprite sheet_274
+  - first:
+      213: 4604015910982677464
+    second: egg and flower sprite sheet_275
+  - first:
+      213: -3938546078626874830
+    second: egg and flower sprite sheet_276
+  - first:
+      213: 2266911299656880852
+    second: egg and flower sprite sheet_277
+  - first:
+      213: -738612664786894344
+    second: egg and flower sprite sheet_278
+  - first:
+      213: -1461060732338402925
+    second: egg and flower sprite sheet_279
+  - first:
+      213: -5926201745114813407
+    second: egg and flower sprite sheet_280
+  - first:
+      213: 8218522385202251048
+    second: egg and flower sprite sheet_281
+  - first:
+      213: -4957675946893431173
+    second: egg and flower sprite sheet_282
+  - first:
+      213: 4321962689234405299
+    second: egg and flower sprite sheet_283
+  - first:
+      213: 8464816382521907789
+    second: egg and flower sprite sheet_284
+  - first:
+      213: -7731123485556345766
+    second: egg and flower sprite sheet_285
+  - first:
+      213: 3499975306793239656
+    second: egg and flower sprite sheet_286
+  - first:
+      213: -2220348520240547693
+    second: egg and flower sprite sheet_287
+  - first:
+      213: -7908087832853967990
+    second: egg and flower sprite sheet_288
+  - first:
+      213: -2511705587696947241
+    second: egg and flower sprite sheet_289
+  - first:
+      213: 8687736769359056689
+    second: egg and flower sprite sheet_290
+  - first:
+      213: 7940283082593518655
+    second: egg and flower sprite sheet_291
+  - first:
+      213: 9084556930379000243
+    second: egg and flower sprite sheet_292
+  - first:
+      213: -7583679739019980345
+    second: egg and flower sprite sheet_293
+  - first:
+      213: -3673522234500222427
+    second: egg and flower sprite sheet_294
+  - first:
+      213: 1878126539087801847
+    second: egg and flower sprite sheet_295
+  - first:
+      213: -865595179675021708
+    second: egg and flower sprite sheet_296
+  - first:
+      213: 8164533918720237470
+    second: egg and flower sprite sheet_297
+  - first:
+      213: -2535782505042569009
+    second: egg and flower sprite sheet_298
+  - first:
+      213: -7062513222398781307
+    second: egg and flower sprite sheet_299
+  - first:
+      213: -4849703742701110808
+    second: egg and flower sprite sheet_300
+  - first:
+      213: -3092435475355725163
+    second: egg and flower sprite sheet_301
+  - first:
+      213: 9152590598950190307
+    second: egg and flower sprite sheet_302
+  - first:
+      213: 1343361459598440933
+    second: egg and flower sprite sheet_303
+  - first:
+      213: -4407893023488478685
+    second: egg and flower sprite sheet_304
+  - first:
+      213: -9090795065638215659
+    second: egg and flower sprite sheet_305
+  - first:
+      213: -4540291518441988775
+    second: egg and flower sprite sheet_306
+  - first:
+      213: 4824297845507411866
+    second: egg and flower sprite sheet_307
+  - first:
+      213: -5618621942899946700
+    second: egg and flower sprite sheet_308
+  - first:
+      213: 5267674121201253430
+    second: egg and flower sprite sheet_309
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Egg1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 111
+        width: 310
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd7b7db6e3e43c60800000000000000
+      internalID: 7797107435046141367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg2
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 105
+        width: 311
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14aaab0984a331860800000000000000
+      internalID: 7499401887842216513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flower1
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 86
+        width: 392
+        height: 573
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4b39a5ee16ccba0800000000000000
+      internalID: -6067366921625160478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flower2
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 79
+        width: 381
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ea15217103d2350800000000000000
+      internalID: 5993499554749722148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

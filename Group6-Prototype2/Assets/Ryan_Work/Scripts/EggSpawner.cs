@@ -44,7 +44,7 @@ public class EggSpawner : MonoBehaviour
 
       if (spawnStarter.canSpawn)
         {
-            patternToSpawn = Random.Range(0, 9);
+            patternToSpawn = Random.Range(0, 11);
 
          
             if (patternToSpawn == 0)
@@ -94,9 +94,19 @@ public class EggSpawner : MonoBehaviour
                 RandomNumberAssignment();
                 OneOneOne2();
             }
+
+           if (patternToSpawn == 9)
+            {
+                ZigZag2();
+            }
+
+           if (patternToSpawn == 10)
+            {
+                ZigZag4();
+            }
            else
            {
-              patternToSpawn = Random.Range(0, 9);
+              patternToSpawn = Random.Range(0, 11);
            }
 
         }
