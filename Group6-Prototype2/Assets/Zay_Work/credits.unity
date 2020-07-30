@@ -888,5 +888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game_over_panel
       objectReference: {fileID: 0}
+    - target: {fileID: 8117399736858718599, guid: 2e793d5caffb10d4ba03d7b8c33790ea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e793d5caffb10d4ba03d7b8c33790ea, type: 3}
