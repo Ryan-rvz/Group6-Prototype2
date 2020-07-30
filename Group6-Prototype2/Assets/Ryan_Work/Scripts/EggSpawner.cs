@@ -44,21 +44,19 @@ public class EggSpawner : MonoBehaviour
 
       if (spawnStarter.canSpawn)
         {
-            patternToSpawn = Random.Range(0, 5);
+            patternToSpawn = Random.Range(0, 11);
 
          
             if (patternToSpawn == 0)
             {
-                StraightLine1();
                 RandomNumberAssignment();
-
+                StraightLine1();
             }
 
             if (patternToSpawn == 1)
             {
-                StraightLine2();
                 RandomNumberAssignment();
-
+                StraightLine2();
             }
 
             if (patternToSpawn == 2)
@@ -68,17 +66,47 @@ public class EggSpawner : MonoBehaviour
 
             if (patternToSpawn == 3)
             {
-                ZigZag2();
+                ZigZag3();
             }
 
            if (patternToSpawn == 4 && Time.time >= timeChanger)
            {
                timeChanger = Time.time + timeBetweenChanger;
-                ChangerStraight();
+                ChangerStraight1();
            }
+           if (patternToSpawn == 5)
+            {
+                RandomNumberAssignment();
+                TwoOneTwo1();
+            }
+           if (patternToSpawn == 6)
+            {
+                RandomNumberAssignment();
+                TwoOneTwo2();
+            }
+           if (patternToSpawn == 7)
+            {
+                RandomNumberAssignment();
+                OneOneOne1();
+            }
+           if(patternToSpawn == 8)
+            {
+                RandomNumberAssignment();
+                OneOneOne2();
+            }
+
+           if (patternToSpawn == 9)
+            {
+                ZigZag2();
+            }
+
+           if (patternToSpawn == 10)
+            {
+                ZigZag4();
+            }
            else
            {
-              patternToSpawn = Random.Range(0, 5);
+              patternToSpawn = Random.Range(0, 11);
            }
 
         }
@@ -103,7 +131,6 @@ public class EggSpawner : MonoBehaviour
         int randomColorIndex;
         spawnStarter.canSpawn = false;
 
-
         do
         {
             randomColorIndex = Random.Range(0, 5);
@@ -124,14 +151,24 @@ public class EggSpawner : MonoBehaviour
     {
         spawnStarter.canSpawn = false;
         Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[0].transform.position.x, spawnPoint[0].transform.position.y), Quaternion.identity);
-        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[1].transform.position.x + 1.5f, spawnPoint[1].transform.position.y), Quaternion.identity);
-        Instantiate(Eggs[Player.currentColor], new Vector2(spawnPoint[2].transform.position.x + 3f, spawnPoint[2].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Player.currentColor], new Vector2(spawnPoint[1].transform.position.x + 1.5f, spawnPoint[1].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[2].transform.position.x + 3f, spawnPoint[2].transform.position.y), Quaternion.identity);
         Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[3].transform.position.x + 4.5f, spawnPoint[3].transform.position.y), Quaternion.identity);
         Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[4].transform.position.x + 6f, spawnPoint[4].transform.position.y), Quaternion.identity);
 
     }
 
     public void ZigZag2()
+    {
+        spawnStarter.canSpawn = false;
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[0].transform.position.x, spawnPoint[0].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[1].transform.position.x + 1.5f, spawnPoint[1].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[2].transform.position.x + 3f, spawnPoint[2].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[3].transform.position.x + 4.5f, spawnPoint[3].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Player.currentColor], new Vector2(spawnPoint[4].transform.position.x + 6f, spawnPoint[4].transform.position.y), Quaternion.identity);
+    }
+
+    public void ZigZag3()
     {
         spawnStarter.canSpawn = false;
         Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[0].transform.position.x + 6f, spawnPoint[0].transform.position.y), Quaternion.identity);
@@ -141,28 +178,67 @@ public class EggSpawner : MonoBehaviour
         Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[4].transform.position.x, spawnPoint[4].transform.position.y), Quaternion.identity);
     }
 
-    public void ChangerStraight()
+    public void ZigZag4()
     {
-        int currentSpawn = 0;
         spawnStarter.canSpawn = false;
-
-        if( currentSpawn <= 4)
-        {
-            for (int i = 0; i <= 3; i++)
-            {
-                if (currentSpawn == 3)
-                {
-                    currentSpawn++;
-                   
-                }
-                Instantiate(Eggs[Random.Range(0, Eggs.Length)], spawnPoint[currentSpawn].transform.position, Quaternion.identity);
-                currentSpawn++;
-              
-            }
-
-            Instantiate(changer, spawnPoint[3].transform.position, Quaternion.identity);
-        }  
+        Instantiate(Eggs[Player.currentColor], new Vector2(spawnPoint[0].transform.position.x + 6f, spawnPoint[0].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[1].transform.position.x + 4.5f, spawnPoint[1].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[2].transform.position.x + 3f, spawnPoint[2].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[3].transform.position.x + 1.5f, spawnPoint[3].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[4].transform.position.x, spawnPoint[4].transform.position.y), Quaternion.identity);
     }
+
+
+    public void TwoOneTwo1()
+    {
+        spawnStarter.canSpawn = false;
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[0].transform.position.x, spawnPoint[0].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Player.currentColor], new Vector2(spawnPoint[index1].transform.position.x, spawnPoint[index1].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index2].transform.position.x + 1.5f, spawnPoint[index2].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index3].transform.position.x, spawnPoint[index3].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index4].transform.position.x, spawnPoint[index4].transform.position.y), Quaternion.identity);
+    }
+    public void TwoOneTwo2()
+    {
+        spawnStarter.canSpawn = false;
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[0].transform.position.x, spawnPoint[0].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Player.currentColor], new Vector2(spawnPoint[index1].transform.position.x, spawnPoint[index1].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index2].transform.position.x - 1.5f, spawnPoint[index2].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index3].transform.position.x, spawnPoint[index3].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index4].transform.position.x, spawnPoint[index4].transform.position.y), Quaternion.identity);
+    }
+
+    public void OneOneOne1()
+    {
+        spawnStarter.canSpawn = false;
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[0].transform.position.x, spawnPoint[0].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Player.currentColor], new Vector2(spawnPoint[index1].transform.position.x + 1.5f, spawnPoint[index1].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index2].transform.position.x , spawnPoint[index2].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index3].transform.position.x + 1.5f, spawnPoint[index3].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index4].transform.position.x, spawnPoint[index4].transform.position.y), Quaternion.identity);
+    }
+    public void OneOneOne2()
+    {
+        spawnStarter.canSpawn = false;
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[0].transform.position.x, spawnPoint[0].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Player.currentColor], new Vector2(spawnPoint[index1].transform.position.x - 1.5f, spawnPoint[index1].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index2].transform.position.x, spawnPoint[index2].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index3].transform.position.x - 1.5f, spawnPoint[index3].transform.position.y), Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], new Vector2(spawnPoint[index4].transform.position.x, spawnPoint[index4].transform.position.y), Quaternion.identity);
+    }
+
+
+    public void ChangerStraight1()
+    {
+        spawnStarter.canSpawn = false;
+        Instantiate(Eggs[4], spawnPoint[0].transform.position, Quaternion.identity);
+        Instantiate(Eggs[4], spawnPoint[index1].transform.position, Quaternion.identity);
+        Instantiate(Eggs[4], spawnPoint[index2].transform.position, Quaternion.identity);
+        Instantiate(changer, spawnPoint[index3].transform.position, Quaternion.identity);
+        Instantiate(Eggs[4], spawnPoint[index4].transform.position, Quaternion.identity);
+    }
+
+    
 
     private void RandomNumberAssignment()
     {
