@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Zay_Work/menu.unity
+    guid: d29f4e5bdae1c654bb2ceb6dc81d07ad
+  - enabled: 1
+    path: Assets/Ryan_Work/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Erin_Work/HowTo.unity
+    guid: f48c73017768d7b468c9c9a94ded3b5d
+  - enabled: 1
+    path: Assets/Zay_Work/credits.unity
+    guid: 20826be1a16ac614bace4434b3d4d069
   m_configObjects: {}
