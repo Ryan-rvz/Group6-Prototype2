@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UniversalVarHolder : MonoBehaviour
 {
@@ -26,7 +28,8 @@ public class UniversalVarHolder : MonoBehaviour
     public static bool playerDead;
 
     private SoundManager soundScript;
-    
+
+    public Text scoreText;
 
     private void Awake()
     {
@@ -46,6 +49,8 @@ public class UniversalVarHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        scoreText.text = "Score: " + score;
+
         currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, time / accelerationTime);
         time += Time.deltaTime;
         currentTime = Time.timeScale;
