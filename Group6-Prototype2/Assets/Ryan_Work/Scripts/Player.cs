@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public float yMoveAmount;
     public float moveSpeed;
     private bool canMove;
+    private bool canChange;
    
 
     public float maxHeight;
@@ -27,6 +28,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         canMove = true;
+        canChange = true;
        
         universeScript = GameObject.Find("UniversalManager").GetComponent<UniversalVarHolder>();
         targetPosition = transform.position;
@@ -45,12 +47,12 @@ public class Player : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight && canMove)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight && canMove && canChange)
         {
             targetPosition = new Vector2(transform.position.x, transform.position.y + yMoveAmount );
             canMove = false;
         }
-        else if(Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight && canMove)
+        else if(Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight && canMove && canChange)
         {
             targetPosition = new Vector2(transform.position.x, transform.position.y - yMoveAmount);
             canMove = false;
@@ -106,21 +108,21 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == this.tag)
         {
-            ;
-            Destroy(collision.gameObject);
+            canChange = false;
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;     
             universeScript.AddToScore();
         }
         else  if (collision.tag == "Changer")
         {
-            
+            ColorSwitch();
             universeScript.AddToScore();
         }
-
-       
-
+        else if(collision.tag == "End")
+        {
+            canChange = true;
+        }
         else if (collision.tag != this.tag)
         {
-
             universeScript.PlayerDeath();
         }
     }

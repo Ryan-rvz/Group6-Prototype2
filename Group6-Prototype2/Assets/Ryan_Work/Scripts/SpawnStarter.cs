@@ -25,14 +25,14 @@ public class SpawnStarter : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
         if (collision)
         {
             if (collision.tag == "Changer")
             {
                 eggCount = 0;
             }
-            else
+            else if (collision.tag == "Red" || collision.tag == "Green" || collision.tag == "Yellow" || collision.tag == "Blue" || collision.tag == "Black")
             {
                 eggCount++;
             }

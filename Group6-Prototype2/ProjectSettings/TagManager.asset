@@ -12,6 +12,7 @@ TagManager:
   - ChangerSwitch
   - Egg
   - Black
+  - End
   layers:
   - Default
   - TransparentFX
