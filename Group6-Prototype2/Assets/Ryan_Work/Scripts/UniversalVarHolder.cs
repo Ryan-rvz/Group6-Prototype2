@@ -25,6 +25,7 @@ public class UniversalVarHolder : MonoBehaviour
     [HideInInspector]
     public static bool playerDead;
 
+    private SoundManager soundScript;
     
 
     private void Awake()
@@ -35,6 +36,7 @@ public class UniversalVarHolder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        soundScript = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         screenShake = GameObject.Find("MainCamera").GetComponent<CameraShake>();
         playerHolder = GameObject.Find("PlayerHolder");
         minSpeed = currentSpeed;
@@ -64,7 +66,7 @@ public class UniversalVarHolder : MonoBehaviour
 
     public void PlayerDeath()
     {
-
+        soundScript.DeathSound();
         playerDead = true;    
         screenShake.WrongEggShake();
         Destroy(playerHolder);

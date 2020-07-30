@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     public float maxHeight;
     public float minHeight;
 
+    private SoundManager soundScript;
+
 
 
     private UniversalVarHolder universeScript;
@@ -29,7 +31,8 @@ public class Player : MonoBehaviour
     {
         canMove = true;
         canChange = true;
-       
+
+        soundScript = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         universeScript = GameObject.Find("UniversalManager").GetComponent<UniversalVarHolder>();
         targetPosition = transform.position;
             
@@ -109,12 +112,14 @@ public class Player : MonoBehaviour
         if (collision.tag == this.tag)
         {
             canChange = false;
+            soundScript.EggPickupSound();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;     
             universeScript.AddToScore();
         }
         else  if (collision.tag == "Changer")
         {
             ColorSwitch();
+            soundScript.DyeSound();
             universeScript.AddToScore();
         }
         else if(collision.tag == "End")
