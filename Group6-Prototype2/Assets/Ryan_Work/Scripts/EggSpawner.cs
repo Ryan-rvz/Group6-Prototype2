@@ -18,12 +18,23 @@ public class EggSpawner : MonoBehaviour
     private float timeChanger;
 
     //used for random variation in lines
-    private int index0, index1, index2, index3, index4;
+    private int index1, index2, index3, index4;
+    public int rand;
+    public int length = 5;
+    public List<int> randomList = new List<int>();
+
+    private void Awake()
+    {
+        RandomNumberAssignment();
+
+    }
 
     private void Start()
     {
         spawnStarter.canSpawn = true;
         patternToSpawn = 0;
+
+
     }
 
     private void Update()
@@ -36,15 +47,18 @@ public class EggSpawner : MonoBehaviour
             patternToSpawn = Random.Range(0, 5);
 
          
-
             if (patternToSpawn == 0)
             {
                 StraightLine1();
+                RandomNumberAssignment();
+
             }
 
             if (patternToSpawn == 1)
             {
                 StraightLine2();
+                RandomNumberAssignment();
+
             }
 
             if (patternToSpawn == 2)
@@ -60,7 +74,7 @@ public class EggSpawner : MonoBehaviour
            if (patternToSpawn == 4 && Time.time >= timeChanger)
            {
                timeChanger = Time.time + timeBetweenChanger;
-               ChangerStraight();
+                ChangerStraight();
            }
            else
            {
@@ -77,10 +91,10 @@ public class EggSpawner : MonoBehaviour
     {
         spawnStarter.canSpawn = false;
         Instantiate(Eggs[Random.Range(0, Eggs.Length)], spawnPoint[0].transform.position, Quaternion.identity);
-        Instantiate(Eggs[Player.currentColor], spawnPoint[1].transform.position, Quaternion.identity);
-        Instantiate(Eggs[Random.Range(0, Eggs.Length)], spawnPoint[2].transform.position, Quaternion.identity);
-        Instantiate(Eggs[Random.Range(0, Eggs.Length)], spawnPoint[3].transform.position, Quaternion.identity);
-        Instantiate(Eggs[Random.Range(0, Eggs.Length)],spawnPoint[4].transform.position, Quaternion.identity);
+        Instantiate(Eggs[Player.currentColor], spawnPoint[index1].transform.position, Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], spawnPoint[index2].transform.position, Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)], spawnPoint[index3].transform.position, Quaternion.identity);
+        Instantiate(Eggs[Random.Range(0, Eggs.Length)],spawnPoint[index4].transform.position, Quaternion.identity);
     }
 
     //straight line with only one right color
@@ -96,10 +110,10 @@ public class EggSpawner : MonoBehaviour
         } while (randomColorIndex == Player.currentColor);
         {
             Instantiate(Eggs[randomColorIndex], spawnPoint[0].transform.position, Quaternion.identity);
-            Instantiate(Eggs[randomColorIndex], spawnPoint[1].transform.position, Quaternion.identity);
-            Instantiate(Eggs[randomColorIndex], spawnPoint[2].transform.position, Quaternion.identity);
-            Instantiate(Eggs[Player.currentColor], spawnPoint[3].transform.position, Quaternion.identity);
-            Instantiate(Eggs[randomColorIndex], spawnPoint[4].transform.position, Quaternion.identity);
+            Instantiate(Eggs[randomColorIndex], spawnPoint[index1].transform.position, Quaternion.identity);
+            Instantiate(Eggs[randomColorIndex], spawnPoint[index2].transform.position, Quaternion.identity);
+            Instantiate(Eggs[Player.currentColor], spawnPoint[index3].transform.position, Quaternion.identity);
+            Instantiate(Eggs[randomColorIndex], spawnPoint[index4].transform.position, Quaternion.identity);
         }
         
     }
@@ -152,8 +166,25 @@ public class EggSpawner : MonoBehaviour
 
     private void RandomNumberAssignment()
     {
-       
-        //still need to figure out how to assign random numbers without repeating 
-        
+
+        randomList = new List<int>(new int[length]);
+
+        for (int j = 1; j < length; j++)
+        {
+            rand = Random.Range(0, 5);
+
+            while (randomList.Contains(rand))
+            {
+                rand = Random.Range(0, 5);
+            }
+
+            randomList[j] = rand;     
+
+        }
+        index1 = randomList[1];
+        index2 = randomList[2];
+        index3 = randomList[3];
+        index4 = randomList[4];
+
     }
 }

@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public float yMoveAmount;
     public float moveSpeed;
     private bool canMove;
+   
 
     public float maxHeight;
     public float minHeight;
@@ -26,7 +27,9 @@ public class Player : MonoBehaviour
     private void Start()
     {
         canMove = true;
+       
         universeScript = GameObject.Find("UniversalManager").GetComponent<UniversalVarHolder>();
+        targetPosition = transform.position;
             
     }
 
@@ -44,7 +47,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight && canMove)
         {
-            targetPosition = new Vector2(transform.position.x, transform.position.y + yMoveAmount);
+            targetPosition = new Vector2(transform.position.x, transform.position.y + yMoveAmount );
             canMove = false;
         }
         else if(Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight && canMove)
@@ -102,14 +105,18 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == this.tag)
-        {        
+        {
+            ;
             Destroy(collision.gameObject);
             universeScript.AddToScore();
         }
         else  if (collision.tag == "Changer")
         {
+            
             universeScript.AddToScore();
         }
+
+       
 
         else if (collision.tag != this.tag)
         {
@@ -117,6 +124,8 @@ public class Player : MonoBehaviour
             universeScript.PlayerDeath();
         }
     }
+
+    
 
 
     public void ColorSwitch()
