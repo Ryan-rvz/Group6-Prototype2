@@ -9,6 +9,7 @@ public class MovingBackground : MonoBehaviour
     public float endX;
     public float startX;
 
+    private
 
     // Update is called once per frame
     void Update()

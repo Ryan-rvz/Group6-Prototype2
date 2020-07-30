@@ -31,6 +31,8 @@ public class UniversalVarHolder : MonoBehaviour
 
     public Text scoreText;
 
+    public GameObject gameOverMenu;
+
     private void Awake()
     {
         playerDead = false;
@@ -39,6 +41,8 @@ public class UniversalVarHolder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameOverMenu.SetActive(false);
+
         soundScript = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         screenShake = GameObject.Find("MainCamera").GetComponent<CameraShake>();
         playerHolder = GameObject.Find("PlayerHolder");
@@ -72,7 +76,8 @@ public class UniversalVarHolder : MonoBehaviour
     public void PlayerDeath()
     {
         soundScript.DeathSound();
-        playerDead = true;    
+        playerDead = true;
+        gameOverMenu.SetActive(true);
         screenShake.WrongEggShake();
         Destroy(playerHolder);
     }

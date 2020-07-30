@@ -14,8 +14,8 @@ public class Player : MonoBehaviour
 
     public float yMoveAmount;
     public float moveSpeed;
-    private bool canMove;
-    private bool canChange;
+    public bool canMove;
+    public bool canChange;
    
 
     public float maxHeight;
@@ -41,21 +41,16 @@ public class Player : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            ColorSwitch();
-            
-        }
-
+     
 
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight && canMove && canChange)
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) && transform.position.y < maxHeight && canMove && canChange)
         {
             targetPosition = new Vector2(transform.position.x, transform.position.y + yMoveAmount );
             canMove = false;
         }
-        else if(Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight && canMove && canChange)
+        else if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)&& transform.position.y > minHeight && canMove && canChange)
         {
             targetPosition = new Vector2(transform.position.x, transform.position.y - yMoveAmount);
             canMove = false;
@@ -125,6 +120,10 @@ public class Player : MonoBehaviour
         else if(collision.tag == "End")
         {
             canChange = true;
+        }
+        else if (collision.tag == "First")
+        {
+            return;
         }
         else if (collision.tag != this.tag)
         {

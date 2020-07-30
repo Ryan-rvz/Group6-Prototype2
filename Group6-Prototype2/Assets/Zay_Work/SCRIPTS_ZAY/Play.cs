@@ -8,5 +8,6 @@ public class Play : MonoBehaviour
    public void LoadByIndex(int SceneIndex)
    {
         SceneManager.LoadScene(SceneIndex);
+        Time.timeScale = 1f;
    }
 }

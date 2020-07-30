@@ -31,7 +31,8 @@ public class EggSpawner : MonoBehaviour
 
     private void Start()
     {
-        spawnStarter.canSpawn = true;
+        
+        spawnStarter.canSpawn = false;
         patternToSpawn = 0;
 
 
