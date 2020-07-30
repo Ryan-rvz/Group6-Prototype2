@@ -45,15 +45,25 @@ public class Player : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) && transform.position.y < maxHeight && canMove && canChange)
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
-            targetPosition = new Vector2(transform.position.x, transform.position.y + yMoveAmount );
-            canMove = false;
+            if (transform.position.y < maxHeight && canMove && canChange)
+            {
+                targetPosition = new Vector2(transform.position.x, transform.position.y + yMoveAmount);
+                canMove = false;
+            }
+            
         }
-        else if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)&& transform.position.y > minHeight && canMove && canChange)
+        else if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
-            targetPosition = new Vector2(transform.position.x, transform.position.y - yMoveAmount);
-            canMove = false;
+            if (transform.position.y > minHeight && canMove && canChange)
+            {
+                targetPosition = new Vector2(transform.position.x, transform.position.y - yMoveAmount);
+                canMove = false;
+            }
+                
+
+
         }
 
         if (this.gameObject.transform.position.y == targetPosition.y)
